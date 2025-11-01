@@ -957,6 +957,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1120984793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1120984795}
+  - component: {fileID: 1120984794}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1120984794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120984793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa6ac82981cefe245955e667f5822b9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGameActive: 0
+--- !u!4 &1120984795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120984793}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.26246, y: -1.65699, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1285252576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,6 +1724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1447973458}
+  - component: {fileID: 1447973459}
   m_Layer: 0
   m_Name: Lane_1
   m_TagString: Untagged
@@ -1706,6 +1752,25 @@ Transform:
   - {fileID: 1738394320}
   m_Father: {fileID: 249710940}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1447973459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447973457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6ceca1c9fcd1e4482e5e9aca8dd3ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basePoint: {fileID: 2006691473}
+  slots:
+  - {fileID: 2119817255}
+  - {fileID: 336735043}
+  - {fileID: 214279733}
+  spawnPoint: {fileID: 1738394320}
+  laneIndex: 1
 --- !u!1 &1482096801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,6 +1914,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1708940517}
+  - component: {fileID: 1708940518}
   m_Layer: 0
   m_Name: Lane_3
   m_TagString: Untagged
@@ -1876,6 +1942,25 @@ Transform:
   - {fileID: 1286195878}
   m_Father: {fileID: 249710940}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1708940518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708940516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6ceca1c9fcd1e4482e5e9aca8dd3ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basePoint: {fileID: 1381061100}
+  slots:
+  - {fileID: 1353668026}
+  - {fileID: 1285252577}
+  - {fileID: 1011969385}
+  spawnPoint: {fileID: 1286195878}
+  laneIndex: 3
 --- !u!1 &1738394319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,6 +2104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1763729463}
+  - component: {fileID: 1763729464}
   m_Layer: 0
   m_Name: Lane_2
   m_TagString: Untagged
@@ -2046,6 +2132,25 @@ Transform:
   - {fileID: 1929347547}
   m_Father: {fileID: 249710940}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1763729464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763729462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6ceca1c9fcd1e4482e5e9aca8dd3ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basePoint: {fileID: 160574382}
+  slots:
+  - {fileID: 124623820}
+  - {fileID: 13753418}
+  - {fileID: 1482096802}
+  spawnPoint: {fileID: 1929347547}
+  laneIndex: 2
 --- !u!1 &1929347546
 GameObject:
   m_ObjectHideFlags: 0
@@ -2672,3 +2777,4 @@ SceneRoots:
   - {fileID: 1959054752}
   - {fileID: 249710940}
   - {fileID: 1434590496}
+  - {fileID: 1120984795}
