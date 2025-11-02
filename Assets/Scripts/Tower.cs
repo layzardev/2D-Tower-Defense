@@ -5,7 +5,7 @@ public class Tower : MonoBehaviour
     public GameObject projectilePrefab;
     public Transform shootPoint;
     public float fireRate = 1.5f;
-    private float fireTimer;
+    private float fireTimer; 
 
     void Update()
     {

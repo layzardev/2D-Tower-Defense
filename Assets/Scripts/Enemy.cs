@@ -3,7 +3,15 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float speed = 2f;
+    public int maxHP = 3;
+    private int currentHP;
+
     private Transform targetBase;
+
+    void Start()
+    {
+        currentHP = maxHP;
+    }
 
     public void SetTarget(Transform baseTarget)
     {
@@ -32,8 +40,20 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-        speed = Mathf.Max(speed, 0.5f); // optional slowdown effect
-        Destroy(gameObject);
+        currentHP -= amount;
+        Debug.Log($"Enemy took {amount} damage. Current HP: {currentHP}");
+
+        speed = Mathf.Max(speed * 0.8f, 0.5f);
+
+        if (currentHP <= 0)
+        {
+            Die();
+        }
     }
 
+    private void Die()
+    {
+        Debug.Log("Enemy died!");
+        Destroy(gameObject);
+    }
 }
