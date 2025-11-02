@@ -29,4 +29,11 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void TakeDamage(int amount)
+    {
+        speed = Mathf.Max(speed, 0.5f); // optional slowdown effect
+        Destroy(gameObject);
+    }
+
 }
