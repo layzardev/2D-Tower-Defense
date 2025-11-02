@@ -4,8 +4,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    [Header("Game State")]
-    public bool isGameActive = false;
+    //[Header("Game State")]
+    //public bool isGameActive = false;
+    public bool isGameActive = true;
 
     void Awake()
     {        
@@ -15,15 +16,16 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    void Start()
-    {
-        Debug.Log("GameManager initialized!");
-        isGameActive = true;
-    }
+    //void Start()
+    //{
+    //    Debug.Log("GameManager initialized!");
+    //    isGameActive = true;
+    //}
 
     public void GameOver()
     {
         isGameActive = false;
-        Debug.Log("?? Game Over!");
+        //Debug.Log("?? Game Over!");
+        Debug.Log("GAME OVER! You lost all bases!");
     }
 }
