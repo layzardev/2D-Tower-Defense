@@ -8,6 +8,8 @@ TagManager:
   - Tower
   - Projectile
   - Base
+  - Slot
+  - TrashBin
   layers:
   - Default
   - TransparentFX

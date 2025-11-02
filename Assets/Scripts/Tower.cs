@@ -41,4 +41,9 @@ public class Tower : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, 4f);
     }
+
+    public void DestroyTower()
+    {
+        Destroy(gameObject);
+    }
 }

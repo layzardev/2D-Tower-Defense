@@ -28,4 +28,11 @@ public class GameManager : MonoBehaviour
         //Debug.Log("?? Game Over!");
         Debug.Log("GAME OVER! You lost all bases!");
     }
+
+    public void GameWin()
+    {
+        isGameActive = false;
+        Debug.Log("CONGRATULATIONS! You cleared all waves!");
+        // Tambahkan UI menang atau logic lain di sini
+    }
 }
