@@ -182,8 +182,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 7326947135183135076, guid: 1d10725e867e8044d928ac2b01575ea9, type: 3}
   shootPoint: {fileID: 3104299876920647818}
-  fireRate: 1.5
-  assignedSlot: {fileID: 0}
+  fireRate: 0.5
+  detectionRadius: 4
+  minDistanceToShoot: 3
 --- !u!50 &1034176879679509556
 Rigidbody2D:
   serializedVersion: 5

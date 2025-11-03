@@ -1,9 +1,13 @@
 using UnityEngine;
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
     public float speed = 2f;
     public int maxHP = 3;
+
+    public TMP_Text hpText;
+
     private int currentHP;
 
     private Transform targetBase;
@@ -11,6 +15,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         currentHP = maxHP;
+        UpdateHPText();
     }
 
     public void SetTarget(Transform baseTarget)
@@ -45,6 +50,8 @@ public class Enemy : MonoBehaviour
 
         speed = Mathf.Max(speed * 0.8f, 0.5f);
 
+        UpdateHPText();
+
         if (currentHP <= 0)
         {
             Die();
@@ -55,5 +62,11 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log("Enemy died!");
         Destroy(gameObject);
+    }
+
+    void UpdateHPText()
+    {
+        if (hpText != null)
+            hpText.text = currentHP.ToString();
     }
 }
