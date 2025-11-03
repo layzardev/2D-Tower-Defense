@@ -1909,56 +1909,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912775524}
   m_CullTransparentMesh: 1
---- !u!1 &925300899
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 925300901}
-  - component: {fileID: 925300900}
-  m_Layer: 0
-  m_Name: EnemySpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &925300900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925300899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db4ce04018408df4088da171302f1fd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 6769639885089421495, guid: 9a1391e29bbf79b4da8558e2980848cd, type: 3}
-  lanes:
-  - {fileID: 1447973459}
-  - {fileID: 1763729464}
-  - {fileID: 1708940518}
-  spawnInterval: 3
---- !u!4 &925300901
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925300899}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.26246, y: -1.65699, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1011969384
 GameObject:
   m_ObjectHideFlags: 0
@@ -3724,18 +3674,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - waveNumber: 1
+  - waveName: Wave
     enemyPrefabs:
     - {fileID: 6769639885089421495, guid: 9a1391e29bbf79b4da8558e2980848cd, type: 3}
     - {fileID: 6769639885089421495, guid: 9a1391e29bbf79b4da8558e2980848cd, type: 3}
     spawnInterval: 1
-  - waveNumber: 2
+  - waveName: Wave
     enemyPrefabs:
     - {fileID: 6769639885089421495, guid: 9a1391e29bbf79b4da8558e2980848cd, type: 3}
     - {fileID: 6769639885089421495, guid: 9a1391e29bbf79b4da8558e2980848cd, type: 3}
     - {fileID: 6769639885089421495, guid: 9a1391e29bbf79b4da8558e2980848cd, type: 3}
     spawnInterval: 1
-  - waveNumber: 3
+  - waveName: Wave
     enemyPrefabs:
     - {fileID: 6769639885089421495, guid: 9a1391e29bbf79b4da8558e2980848cd, type: 3}
     spawnInterval: 1
@@ -4464,5 +4414,4 @@ SceneRoots:
   - {fileID: 249710940}
   - {fileID: 1434590496}
   - {fileID: 1120984795}
-  - {fileID: 925300901}
   - {fileID: 1827169578}
